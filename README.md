@@ -403,22 +403,20 @@ You will need the following things properly installed on your computer.
 * [Python 3](https://www.python.org/downloads/) (with pip)
 * [pipenv](https://pypi.org/project/pipenv/)
 
-## Installation details by Chinh Doan
-
-## Eviroment Setup ( for my computer windows 10 )
+## Eviroment Setup edited by Chinh Doan ( for my computer windows 10 )
 
 Run CMD as adminstrator, and run this command step by step.
 1. Install Chocolatey
 
-* Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+* `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
 
 2. Make sure you have [`python3.8` installed and on your `PATH`](https://docs.python-guide.org/starting/installation/).
 
-* choco install python --version=3.8.0
+* `choco install python --version=3.8.0`
 
-* python -m pip install -U pip
+* `python -m pip install -U pip`
 
-* pip install pipenv
+* `pip install pipenv`
 
 3. After that, go into your project 
 * `git clone https://github.com/ExpDev07/coronavirus-tracker-api.git`
