@@ -403,18 +403,28 @@ You will need the following things properly installed on your computer.
 * [Python 3](https://www.python.org/downloads/) (with pip)
 * [pipenv](https://pypi.org/project/pipenv/)
 
-## Installation
+## Installation details by Chinh Doan
 
+## Eviroment Setup ( for my computer windows 10 )
+
+Run CMD as adminstrator, and run this command step by step.
+1. Install Chocolatey
+
+* Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+2. Make sure you have [`python3.8` installed and on your `PATH`](https://docs.python-guide.org/starting/installation/).
+
+* choco install python --version=3.8.0
+
+* python -m pip install -U pip
+
+* pip install pipenv
+
+3. After that, go into your project 
 * `git clone https://github.com/ExpDev07/coronavirus-tracker-api.git`
 * `cd coronavirus-tracker-api`
-
-1. Make sure you have [`python3.8` installed and on your `PATH`](https://docs.python-guide.org/starting/installation/).
-2. [Install the `pipenv` dependency manager](https://pipenv.readthedocs.io/en/latest/install/#installing-pipenv)
-   *  with [pipx](https://pipxproject.github.io/pipx/) `$ pipx install pipenv`
-   * with [Homebrew/Linuxbrew](https://pipenv.readthedocs.io/en/latest/install/#homebrew-installation-of-pipenv) `$ brew install pipenv`
-   * with [pip/pip3 directly](https://pipenv.readthedocs.io/en/latest/install/#pragmatic-installation-of-pipenv) `$ pip install --user pipenv`
-3. Create virtual environment and install all dependencies `$ pipenv sync --dev`
-4. Activate/enter the virtual environment `$ pipenv shell`
+4. Create virtual environment and install all dependencies `$ pipenv sync --dev`
+5. Activate/enter the virtual environment `$ pipenv shell`
 
 And don't despair if don't get the python setup working on the first try. No one did. Guido got pretty close... once. But that's another story. Good luck.
 
